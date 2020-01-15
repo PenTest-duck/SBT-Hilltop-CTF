@@ -3,7 +3,7 @@
 This DES challenge requires a deep understanding of the inner-workings of the DES algorithm.
 The solver must understand (step-by-step) how the DES key schedule works, and how DES decryption for a single block works.
 
-This challenge gave a ciphertext which had only completed 5 out of the 16 rounds and k12 - or the 12th round key that was being used on the ciphertext in round 5 (DES decryption applies keys in reverse order) - and had the solver finish off the decryption, without knowledge of the initial key or ciphertext.
+This challenge gave a ciphertext which had only completed 5 out of the 16 rounds and k12 - or the 12th round key that was being used on the ciphertext in round #5 (DES decryption applies keys in reverse order) - and had the solver finish off the decryption, without knowledge of the initial key or ciphertext.
 
 There were two major tasks the solver had to address:
   1. Generate round keys k1 to k11, by using k12.
@@ -30,4 +30,34 @@ Since the solver does not know what those 8 bits were, the they must fill in tho
 For each possibility of c12, c12 should be inverse left shifted (or right shifted) according to the LS scheme to obtain c11 to c1 and d11 to d1. 
 And for each of the 11 cNdN, it should be permuted according to the PC-2 table to result in 'potential round keys' k1 to k11.
 
+The solver should now have 256 sets of the 'potential round keys' to try decryption with.
+
 # Finishing the Decryption
+
+Since round #5 has already been completed on the ciphertext, only 11 rounds from round #6 onwards remain.
+To do this, only a slight modification from the standard decryption process is required.
+Given a 64-bit block of ciphertext, the standard decryption process is the following:
+  1. Perform initial permutation according to the IP table.
+  2. Split the block into halves l0 and r0.
+  3. Perform 16 rounds.
+  4. Switch the order of l16 and r16.
+  5. Perform inverse permutation according to the IP-1 table.
+ 
+ Within each round:
+   1. Permute & expand rN according to the E table.
+   2. XOR the round key k(16-N) with rN.
+   3. Substitute rN using S-boxes S1 to S8.
+   4. Permute & shrink rN according to the P table.
+   5. XOR l(N-1) with rN.
+
+Since the given ciphertext has already been initially permuted, step 1 can be skipped. 
+Decryption should continue from round 6, following the standard process and using a potential set of round keys k1 to k11 in reverse order.
+
+This decryption process should be performed on all 256 sets of possible round keys and the results should be displayed for manual review. 
+All incorrectly decrypted blocks should be a jumble of strange characters but the flag should stand out.
+
+Flag: HilltopCTF{BreakDES}
+  
+# References
+All of the permutation tables, S-boxes and the LS scheme can be found at: https://en.wikipedia.org/wiki/DES_supplementary_material
+A detailed breakdown of the DES encryption and key scheduling can be found at: https://paginas.fe.up.pt/~ei10109/ca/des.html
