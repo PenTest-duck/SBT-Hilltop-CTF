@@ -60,4 +60,5 @@ Flag: HilltopCTF{BreakDES}
   
 # References
 All of the permutation tables, S-boxes and the LS scheme can be found at: https://en.wikipedia.org/wiki/DES_supplementary_material
+
 A detailed breakdown of the DES encryption and key scheduling can be found at: https://paginas.fe.up.pt/~ei10109/ca/des.html
