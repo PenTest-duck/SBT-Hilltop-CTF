@@ -1,4 +1,5 @@
 #Broken DES Hilltop CTF Solution
+### Run using the terminal python3 command (e.g. python3 solution.py) if IDLE becomes unresponsive during execution.
 
 roundkey12 = "010110010110110110011101000111111000011110100101" # WW2dH4el to binary
 roundresult5 = "1001001111001010001010001110011101011000101010111011110011100010" # k8oo51irvOI= to binary
