@@ -1,4 +1,4 @@
-# Simplified DES - Writeup
+# Simplified DES - Writeup - TEST PROTOTYPE
 
 In order to solve this challenge, you must first have an understanding of the round key generation process in S-DES.
 
