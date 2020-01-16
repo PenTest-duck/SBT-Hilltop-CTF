@@ -1,4 +1,4 @@
-# Simplified DES Challenge
+# Simplified DES Challenge - TEST PROTOTYPE
 
 You are given an S-DES encrypted ciphertext, and k2 (the second round key).
 
