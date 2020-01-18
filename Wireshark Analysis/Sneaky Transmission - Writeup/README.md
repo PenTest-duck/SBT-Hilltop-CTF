@@ -7,9 +7,10 @@ The solver's first instinct would be to check the fields in the ICMP header, fro
 
 While analysing different values in the packet, the solver should notice the fluctuating TTL values in the IP headers of the ICMP ping request packets.
 From there, the solver can assume that exfiltration is occuring through the TTL field.
-Since the TTL values only range from 0 to 255 (which is also the range of decimal numbers representable through 1 byte), the solver can also assume that 1 byte of the flag is being sent in each ping request.
+Since the TTL values only range from 0 to 255 (which is also the range of decimal numbers representable through a single byte), the solver can also assume that 1 byte of the flag is being sent in each ping request.
 
-Once identifying the exfiltration vector, a short script, or scripts, utilising tcpdump can be written to collect and convert the TTL values to a file.
+Once identifying the exfiltration vector, a short script, or series of scripts, utilising tcpdump can be written to collect and convert the TTL values to a file.
+
 One possible way to solve the challenge is the following:
 
 # Bash Script
