@@ -15,8 +15,18 @@ Once a website is chosen, the solver should look into the HTML source for the se
 In Chrome, the solver can right click on a song title, click Inspect, find the parent class which contains a list of all the song titles and right click > Copy > Copy element.
 Once the list has been copied, paste it into a file in order to 'clean up' the wordlist and remove all unnecessary text.
 
+In our case, the pasted list in web_scrape.txt is all in a single line.
+For ease of viewing, we should add some newline characters by using the *tr* command.
 
+`cat web_scrape.txt | tr '>' '\n' | tr '<' ' '`
 
+This replaces all the closing element tags with newline characters and virtually removes the opening tags.
+
+To remove all unnecessary text and whitespace in, and at the end of lines, a series of *grep*, *cut* and *sed* can be used.
+
+`cat web_scrape.txt | tr '>' '\n' | tr '<' ' ' | grep '/a' | grep -v href | cut -d '/' -f 1 | sed 's/ //g' > wordlist.txt`
+
+The wordlist can now be manually reviewed and tidied up by replacing &amp with & and removing apostrophes and brackets.
 
 
 # References
