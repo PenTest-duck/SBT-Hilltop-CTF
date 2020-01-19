@@ -28,6 +28,23 @@ To remove all unnecessary text and whitespace in, and at the end of lines, a ser
 
 The wordlist can now be manually reviewed and tidied up by replacing &amp with & and removing apostrophes and brackets.
 
+# Attempting to Crack the Hash
+
+There are two major password cracking tools: John the Ripper and Hashcat. 
+In our case, we will use Hashcat to use our initial wordlist to hopefully crack the given hash.
+If opting to use JtR, the passwd and shadow files should be *unshadow*ed before cracking.
+
+Firstly, from the shadow file, only the salt and the hash should be copied and pasted into a separate file (from $6$ to the next colon).
+Then, we can use Hashcat in UNIX sha512crypt mode (-m 1800) using a dictionary attack (-a 0) with our initial wordlist and output the result to a file (note that you may have to use the *--force* parameter for Hashcat to start).
+
+`hashcat -m 1800 -a 0 -o out.txt hash.txt init_wordlist.txt --force`
+
+Once finished, you should notice that Hashcat hasn't been able to crack the hash.
+This is because we may need to append some extra characters the user added 'for security'.
+
+# Improving the Wordlist
+
+
 
 # References
 A list of Eminem songs: https://www.songfacts.com/songs/eminem
