@@ -44,7 +44,24 @@ This is because we may need to append some extra characters the user added 'for 
 
 # Improving the Wordlist
 
+The very first thing that comes to mind when a user is increasing the length of their password is adding numbers.
+Adding a few digits to the end of a password is a very common way for users to bypass any password length enforcements.
+We can write a Bash script that takes advantage of *crunch*, a tool used for generating wordlists.
 
+```
+#!/bin/bash
+
+cat $1 | while read -r passwd; do
+	length=$(($(echo $passwd | wc -m)+2))  # Set +n to number of chars to add - 1
+	crunch $length $length -t $passwd%%% >> wordlist.txt  # Set the number of %s to n + 1
+done
+```
+
+The script takes a wordlist file as an argument, appends *x* digits to each password and adds the newly generated wordlist for each password to an improved wordlist.
+
+Adding three digits to each word and running Hashcat using the improved wordlist should crack the hash to reveal a password of TheWayIAm812.
+
+Flag: HilltopCTF{TheWayIAm812}
 
 # References
 A list of Eminem songs: https://www.songfacts.com/songs/eminem
