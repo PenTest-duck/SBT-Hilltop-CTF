@@ -1,6 +1,6 @@
 # Ash
 
-EXIF => Twitter => Github Pages => Wayback => Pastebin
+Follow the breadcrumbs. They will lead you to the flag.
 
 
 https://pastebin.com/rvTctBUm
