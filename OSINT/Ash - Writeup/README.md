@@ -18,7 +18,7 @@ Looking at the Blog and About sections won't reveal anything except some meaning
 Now, keeping in mind that the blog is made through Github Pages, the source repository for the blog can be found with a simple search in Github of the user AsherH0902.
 
 Looking through the different directories and files shouldn't reveal anything interesting.
-Instead, the second hint suggests, you must switch from the master branch to the draft branch.
+Instead, as the second hint suggests, you must switch from the master branch to the draft branch.
 There, within the \_posts directory, you will find an unpublished post containing a Pastebin link.
 
 # Using Wayback Machine to Retrieve the Flag
