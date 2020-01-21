@@ -1,7 +1,7 @@
 # Shady
 
 We've got 2 files and 1 Eminem super-fan.
-And you've got 1 password to crack.
+Now you've got 1 password to crack.
 
 Hint 1: The password contains the title of an Eminem song.
 
