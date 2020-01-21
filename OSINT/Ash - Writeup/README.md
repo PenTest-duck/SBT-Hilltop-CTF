@@ -7,7 +7,7 @@ This challenge follows the Internet footprints of an "Asher Harrison", beginning
 
 The actual quote in the given image is a red herring - the real "breadcrumb" lies within the image's metadata, specifically in the description.
 There are a few websites that can be used to view the metadata, including https://www.thexifer.net and http://exif.regex.info/exif.cgi.
-Note that some metadata viewers won't display the Description.
+Note that some metadata viewers won't display the description.
 
 The description reveals a Twitter account: @AsherH0902
 
