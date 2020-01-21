@@ -14,7 +14,7 @@ The description reveals a Twitter account: @AsherH0902
 # Navigating In Github
 
 The very first tweet on the Twitter account reveals a Github Pages blog, made using Jekyll, a popular Github blog framework.
-Looking at the Blog and About sections won't reaveal anything except some meaningless text.
+Looking at the Blog and About sections won't reveal anything except some meaningless text.
 Now, keeping in mind that the blog is made through Github Pages, the source repository for the blog can be found with a simple search in Github of the user AsherH0902.
 
 Looking through the different directories and files shouldn't reveal anything interesting.
