@@ -23,6 +23,8 @@ There, within the \_posts directory, you will find an unpublished post containin
 
 # Using Wayback Machine to Retrieve the Flag
 
-
+When you follow the Pastebin URL, you should be notified that the page had been removed.
+In order to view a version of the page when it wasn't deleted, we can use the Wayback Machine at http://www.wayback.com and enter in our URL.
+You should find 1 snapshot of the page on the 21st of January and viewing it reveals a Pastebin page with the flag.
 
 Flag: HilltopCTF{d0nt_l34k_1nf0_0nl1n3}
