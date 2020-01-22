@@ -1,7 +1,6 @@
 # Sneaky Transmission
 
-Our server at HQ has been receiving a flood of ICMP packets from our undercover agent.
-Recover the photo that is being exfiltrated.
+Is this a DoS attack? Or could this be... a photo?!
 
 Hint 1: The TTLs on those ICMP echo requests seem strange...
 
