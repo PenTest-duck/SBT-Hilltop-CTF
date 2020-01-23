@@ -5,3 +5,6 @@ for i in range(16):
   prefix = "c ^" + str(hex(i)[2:])
   for j in range(16):
     print(prefix, "$" + str(hex(j)[2:]), line)
+
+
+hashcat -m 100 -a 0 -r rules -o out hash jumbled_wordlist.txt && cat out
