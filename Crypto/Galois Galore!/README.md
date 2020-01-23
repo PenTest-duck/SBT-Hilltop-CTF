@@ -2,7 +2,7 @@
 
 Galois Field addition & multiplication is a crucial component in the MixColumns() function of AES.
 
-In honour of this, why not try a hand at GFA and GFM yourself?
+In honour of this, why not try a hand at GFA and GFM yourself in GF(256) (Galois Field of order 256)?
 
 
 Hint 1:
