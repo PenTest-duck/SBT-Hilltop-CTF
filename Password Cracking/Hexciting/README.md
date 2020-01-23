@@ -1,6 +1,6 @@
 # Hexciting
 
-`Hash: B35621552B48950BA428E7220BFEEC7875A37DF3`
+`Hash: EEA0BC93F8561F87643BD58A10BC05D448EE3762`
 
 The password is in rockyou.txt, but it has an hex digit added at the beginning and end, and the first letter has been capitalised.
 
