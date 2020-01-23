@@ -28,7 +28,7 @@ Let's take a look at a single rule to see how it has been constructed.
   - The *$c* instructs Hashcat to append a 'c' at the end of the word.
   - The *sAB* replaces A with B (e.g. sa4 => replace a with 4).
   
-Once the rules file has been created, Hashcat can be used to crack the hash.
+Once the rules have been copied to a file, Hashcat can be used to crack the hash.
 *Note that you may need to supply the --force option if Hashcat doesn't start.*
 
 `hashcat -m 100 -a 0 -r rules -o out hash jumbled_wordlist.txt && cat out`
