@@ -31,7 +31,7 @@ Let's take a look at a single rule to see how it has been constructed.
 Once the rules have been copied to a file, Hashcat can be used to crack the hash.
 *Note that you may need to supply the --force option if Hashcat doesn't start.*
 
-`hashcat -m 100 -a 0 -r rules -o out hash jumbled_wordlist.txt && cat out`
+`hashcat -m 100 -a 0 -r rules -o out hash rockyou.txt && cat out`
 
 The *-m 100* specifies that the hash is SHA1, the *-a 0* specifies a dictionary attack, *-r rules* makes Hashcat use the rules in the 'rules' file and the *-o out* saves the result to an 'out' file, which is printed at the end.
 
