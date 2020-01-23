@@ -9,6 +9,7 @@ A method that can be used to modify passwords before they are tested against the
 Multiple password cracking tools support this function but in our case, we will use Hashcat.
 
 Before performing a rule-based attack using Hashcat, a rules file must be created, containing all of the modifications to the original word from the wordlist.
+Therefore, the rules file includes 256 rules (for each hex digit combination) and a simple Python script can be used to generate all of the rules.
 
 ```
 line = "$@ sa4 sb6 se3 sg9 si1 so0 ss5 st7 sz2"
