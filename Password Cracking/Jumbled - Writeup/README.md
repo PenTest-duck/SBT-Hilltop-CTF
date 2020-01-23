@@ -5,7 +5,7 @@ This password cracking challenge requires the use of a rule-based attack on the 
 The challenge prompt lifted some load off our shoulders by telling us that the password is in rockyou.txt, but has created a headache by setting some criteria the password had to follow.
 Since the criteria includes the addition of 2 hex digits, creating a new wordlist containing all 256 possible variations of each word is impossible, as the size of the wordlist will become larger than 35GB.
 
-A method that can be used to modify passwords before they are tested against the hash is by using a rule-based attack.
+A method that modifies passwords before they are tested against the hash is by performing a rule-based attack.
 Multiple password cracking tools support this function but in our case, we will use Hashcat.
 
 Before performing a rule-based attack using Hashcat, a rules file must be created, containing all of the modifications to the original word from the wordlist.
