@@ -19,6 +19,15 @@ for i in range(16):
     print(prefix, "$" + str(hex(j)[2:]), line)
 ```
 
+Let's take a look at a single rule to see how it has been constructed.
+
+`c ^3 $c $@ sa4 sb6 se3 sg9 si1 so0 ss5 st7 sz2`
+
+  - The *c* instructs Hashcat to capitalise the first letter of the word.
+  - The *^3* instructs Hashcat to prepend a '3' at the beginning of the word.
+  - The *$c* instructs Hashcat to append a 'c' at the end of the word.
+  - The *sAB* replaces A with B (e.g. sa4 => replace a with 4).
+
 hashcat -m 100 -a 0 -r rules -o out hash jumbled_wordlist.txt && cat out
 
 
