@@ -2,7 +2,7 @@
 
 `Hash: FAC149D1BCBD4E15A8A1133667E8321F3B4C1FCA`
 
-The password is in jumbled_wordlist.txt, but it has:
+The password is in rockyou.txt, but it has:
   - A hex digit prepended  
   - A hex digit appended 
   - First letter capitalised
