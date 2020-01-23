@@ -6,6 +6,8 @@ The password is in rockyou.txt, but it has been converted into hex and XORed wit
 
 Example: *rockme* => *726f636b6d65* => *726f636b6d65* ^ *56d6b636f627* => password: *24b9d55d9b42*
 
+                                                                       => hash: 3ACDCC127935727CCBAD9AE805EB7EB0B07E5EEA
+
 Hint 1:
 
 Hint 2:
