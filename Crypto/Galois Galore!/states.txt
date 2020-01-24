@@ -18,3 +18,6 @@ bc 7c 3a ab
 d5 44 9f c0
 85 56 69 13
 f0 51 cb 24
+
+
+flag = concat(MixColumns(A) + InvMixColumns(B) + MixColumns(C))
