@@ -19,9 +19,16 @@ It consists of a series of bitwise left shifts, XORs and GFAs.
 Instead of directly multiplying two numbers, intermediate results are calculated, then added at the end to get the result.
 
 For A * B in GF(256) and an irreductible polynomial m(x) = x^8 + x^4 + x^3 + x + 1:
-1. Define the function xtime(n) as: n << 1; and if n > 0xff, do n - 0xff and n XOR 0x1b.
-2. A * 0x02 = xtime(B) = X1; A * 0x04 = xtime(X1) = X2; A * 0x08 = xtime(X2) = X3 ... and so on until A * 0x80.
-3. Xp + Xq + Xs ... and so on until p + q + s + ... = B.
+1. Define the function xtime(n) as: n << 1; and if n > 0xff, do n - 256 and n XOR 0x1b.
+2. A * 0x01 = X0; A * 0x02 = xtime(X0) = X1; A * 0x04 = xtime(X1) = X2; A * 0x08 = xtime(X2) = X3 ... and so on for Xn until 2^n >= B.
+3. Xp XOR Xq XOR Xs XOR ... and so on until p + q + s + ... = B.
+
+For example, for 0x57 * 0x13:
+1. X1 = 0x57 << 1 = 0xae
+2. X2 = 0xae << 1 - 256 XOR 0x1b = 0x47
+3. X3 = 0x47 << 1 = 0x8e
+4. X4 = 0x8e << 1 - 256 XOR 0x1b = 0x07
+5. X0 + X1 + x4 = 0x57 XOR 0xae XOR 0x07 = 0xfe
 
 # Matrix Multiplication
 
