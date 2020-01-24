@@ -4,40 +4,6 @@ Galois Field addition & multiplication is a crucial component in the MixColumns(
 
 In honour of this, why not try a hand at GFA and GFM yourself in MixColumns() and InvMixColumns()?
 
-
-State A:
-
-a8 21 39 6f
-
-45 92 01 40
-
-ce 75 2c db
-
-02 ee 09 ad
-
-
-State B:
-
-70 44 4e 53
-
-88 b6 4a 3b 
-
-d9 ad 66 8a
-
-42 1c 71 9a
-
-
-State C:
-
-bc 7c 3a ab
-
-d5 44 9f c0
-
-85 56 69 13
-
-f0 51 cb 24
-
-
 Hint 1:
 
 Hint 2:
