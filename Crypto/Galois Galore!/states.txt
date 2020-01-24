@@ -20,4 +20,4 @@ d5 44 9f c0
 f0 51 cb 24
 
 
-flag = concatenate MixColumns(A) + InvMixColumns(B) + MixColumns(C)
+flag = MixColumns(A) + InvMixColumns(B) + MixColumns(C)
