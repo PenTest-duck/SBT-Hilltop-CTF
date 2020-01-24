@@ -2,7 +2,7 @@
 
 This cryptography challenge requires the solver to understand and implement the MixColumns() and InvMixColumns() functions of AES, and the Galois Field arithematic and matrix multiplication behind them.
 
-# Galois Field Arithmatic
+# The Maths: Galois Field Arithmatic & Matrix Multiplication
 
 Galois Field is a finite field, meaning that all arithmatic done within the field stays within the field.
 In simple terms, if my Galois Field had an order of 256, the results of any arithmatic done within my GF(256) cannot be larger than 255.
@@ -30,6 +30,9 @@ For example, for 0x57 * 0x13:
 4. X4 = 0x8e << 1 - 256 XOR 0x1b = 0x07
 5. X0 + X1 + x4 = 0x57 XOR 0xae XOR 0x07 = 0xfe
 
-# Matrix Multiplication
+In addition to Galois Field arithmatic, MixColumns() and InvMixColumns() also uses matrix multiplication in its process.
+Each column in the State is GFM-ed to the defined matrix to return a mixed column.
+Each byte in the column is GFM-ed to an associated byte in the matrix, and the results are GFA-ed to result in a byte of the mixed column.
+Figure 5.6 of FIPS 197 shows this process in greater detail.
 
 # MixColumns() & InvMixColumns()
