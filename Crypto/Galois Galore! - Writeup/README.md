@@ -33,6 +33,16 @@ For example, for 0x57 * 0x13:
 In addition to Galois Field arithmatic, MixColumns() and InvMixColumns() also uses matrix multiplication in its process.
 Each column in the State is GFM-ed to the defined matrix to return a mixed column.
 Each byte in the column is GFM-ed to an associated byte in the matrix, and the results are GFA-ed to result in a byte of the mixed column.
+
 Figure 5.6 of FIPS 197 shows this process in greater detail.
 
 # MixColumns() & InvMixColumns()
+
+In essence, MixColumns() and InvMixColumns() are just a series of matrix multiplications with GFAs and GFMs, against predefined matrixes.
+We can convert all the maths discussed above into a Python script and define additional functions to perform base conversion and solve minor implementation issues.
+This step mostly relies on the solver being able to convert concepts to programming language.
+
+In order to reduce the amount of code, an implementation shortcut can be taken in the GFM function.
+Since the highest number in AES's matrixes is 0x0e, step 2 of GFM can be reduced to produce Xn up to n = 3.
+We won't need X4 and above as our multiplicand will never be larger than 0x0e.
+
