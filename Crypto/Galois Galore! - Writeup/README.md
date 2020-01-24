@@ -39,10 +39,13 @@ Figure 5.6 of FIPS 197 shows this process in greater detail.
 # MixColumns() & InvMixColumns()
 
 In essence, MixColumns() and InvMixColumns() are just a series of matrix multiplications with GFAs and GFMs, against predefined matrixes.
-We can convert all the maths discussed above into a Python script and define additional functions to perform base conversion and solve minor implementation issues.
+We can convert all the maths discussed above into a Python script and define additional functions to perform base conversion, solve minor implementation issues and take a State as input (keeping in mind that the State is read vertically).
 This step mostly relies on the solver being able to convert concepts to programming language.
 
 In order to reduce the amount of code, an implementation shortcut can be taken in the GFM function.
 Since the highest number in AES's matrixes is 0x0e, step 2 of GFM can be reduced to produce Xn up to n = 3.
 We won't need X4 and above as our multiplicand will never be larger than 0x0e.
 
+Once the MixColumns() and InvMixColumns() have been performed on the given States, the results should be concatenated and converted from hex to ASCII to give the flag.
+
+Flag: HilltopCTF{th4nk_y0u_s0_much_ev4rist3_g4lo15!!!}
