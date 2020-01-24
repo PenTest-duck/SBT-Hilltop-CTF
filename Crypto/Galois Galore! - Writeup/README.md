@@ -21,7 +21,7 @@ Instead of directly multiplying two numbers, intermediate results are calculated
 For A * B in GF(256) and an irreducible polynomial m(x) = x^8 + x^4 + x^3 + x + 1:
 1. Define the function xtime(n) as: n << 1; and if n > 0xff, do n - 256 and n XOR 0x1b.
 2. A * 0x01 = X0; A * 0x02 = xtime(X0) = X1; A * 0x04 = xtime(X1) = X2; A * 0x08 = xtime(X2) = X3 ... and so on for Xn until 2^n >= B.
-3. Xp XOR Xq XOR Xs XOR ... and so on until p + q + s + ... = B.
+3. Xp XOR Xq XOR Xs XOR ... and so on until 2^p + 2^q + 2^s + ... = B.
 
 For example, for 0x57 * 0x13:
 1. X1 = 0x57 << 1 = 0xae
