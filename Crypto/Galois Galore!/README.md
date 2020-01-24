@@ -2,7 +2,7 @@
 
 Galois Field addition & multiplication is a crucial component in the MixColumns() function of AES.
 
-In honour of this, why not try a hand at GFA and GFM yourself in MixColumns()?
+In honour of this, why not try a hand at GFA and GFM yourself in MixColumns() and InvMixColumns()?
 
 State A:
 
