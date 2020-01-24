@@ -4,6 +4,8 @@ Galois Field addition & multiplication is a crucial component in the MixColumns(
 
 In honour of this, why not try a hand at GFA and GFM yourself in MixColumns() and InvMixColumns()?
 
+Here's a resource to help you: https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197.pdf
+
 Hint 1:
 
 Hint 2:
