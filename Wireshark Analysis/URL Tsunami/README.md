@@ -1,4 +1,4 @@
-# Subdomain Tsunami
+# URL Tsunami
 
 What the hell are these URLs?
 
