@@ -1,12 +1,6 @@
 # Subdomain Tsunami
 
-What the hell are these subdomains?
-
-(63 base64).hackthewholeworld.com
-
-Exfiltrate .wav file, containing NATO phonetic alphabet.
-
-HilltopCTF{s1l3n7_w4v35_9r0w_1nt0_t5un4m15}
+What the hell are these URLs?
 
 Hint 1:
 
