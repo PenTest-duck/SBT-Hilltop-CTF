@@ -2,7 +2,7 @@
 
 What the hell are these subdomains?
 
-(200 base64).hackthewholeworld.com
+(63 base64).hackthewholeworld.com
 
 Exfiltrate .wav file, containing NATO phonetic alphabet.
 
