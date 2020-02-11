@@ -16,7 +16,7 @@ Company Password Policy:
 Example: rockme => fR0ckm37@
 ```
 
-Can you crack the hash?
+Can you crack the hash using rockyou.txt?
 
 
 Hint 1:
