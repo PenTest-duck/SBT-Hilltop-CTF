@@ -1,6 +1,6 @@
 # Jumbled
 
-I've found a hash in one of this company's vulnerable databases.
+I've found a hash of the password for the domain controller.
 
 `Hash: 01F3273F68195C29A1A2365BE7AD2B1AAD469A73`
 
