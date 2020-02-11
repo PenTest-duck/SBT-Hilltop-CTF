@@ -13,7 +13,7 @@ Company Password Policy:
   - First letter capitalised
   - An '@' appended to the end
   - Leetspeak (a => 4, b => 6, e => 3, g => 9, i => 1, o => 0, s => 5, t => 7, z => 2) *Capital letters not included*
-Example: *rockme* => *fR0ckm37@*
+Example: rockme => fR0ckm37@
 ```
 
 Can you crack the hash?
