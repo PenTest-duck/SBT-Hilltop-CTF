@@ -7,4 +7,4 @@ Hint 1: "Any time someone tries to tell you that metadata is 'meaningless, don't
 
 Hint 2: "We never leave our roots. We just grow new branches." - Audrey Meadows
 
-Hint 3: For the final step, you'll need to travel through time.
+Hint 3: "Time travel used to be thought of as just science fiction." - Stephen Hawking
