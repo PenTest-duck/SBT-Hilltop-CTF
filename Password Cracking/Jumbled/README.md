@@ -19,7 +19,7 @@ Example: rockme => fR0ckm37@
 Can you crack the hash using rockyou.txt?
 
 
-Hint 1:
+Hint 1: Hashcat + rule-based attack = ???
 
 Hint 2:
 
