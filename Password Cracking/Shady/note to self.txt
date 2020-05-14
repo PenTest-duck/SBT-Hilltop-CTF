@@ -1,0 +1,5 @@
+How to make a super secure password:
+  - Use 3 or more numbers
+  - Use capital letters (camel casing looks good)
+  - Make the password longer than 6 characters 
+  - MAKE SURE I DON'T WRITE IT DOWN ANYWHERE
