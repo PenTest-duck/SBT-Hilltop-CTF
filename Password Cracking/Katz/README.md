@@ -1,5 +1,0 @@
-Katz
-
-
-
-Directories dump => 
