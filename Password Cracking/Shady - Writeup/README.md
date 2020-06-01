@@ -39,7 +39,7 @@ Then, we can use Hashcat in UNIX sha512crypt mode (-m 1800) using a dictionary a
 
 `hashcat -m 1800 -a 0 -o out.txt hash.txt init_wordlist.txt --force`
 
-Once finished, you should notice that Hashcat hasn't been able to crack the hash.
+Once finished, you should notice that Hashcat isn't able to crack the hash.
 This is because we may need to append some extra characters the user added 'for security'.
 
 # Improving the Wordlist
